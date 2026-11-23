@@ -141,14 +141,17 @@
           <div class="project-copy"><div class="project-number">01 / FEATURED PROJECT</div><h3>MCP Blueprint Generator</h3><p>An automated framework that transforms OpenAPI specifications into deployable Model Context Protocol servers, complete with tool definitions and request filtering and sanitization layers.</p><ul class="project-capabilities"><li>OpenAPI specification processing</li><li>Automated MCP server generation</li><li>Tool definition generation</li><li>Request filtering &amp; sanitization</li><li>LLM-powered tool discovery</li><li>Dynamic tool invocation</li><li>Natural language access to enterprise APIs</li></ul></div>
           <div class="architecture-panel" aria-label="MCP Blueprint Generator architecture diagram">
             <div class="architecture-title"><span>System flow</span><small>INTERACTIVE ARCHITECTURE</small></div>
-            <div class="flow-diagram">
-              <button class="flow-node" data-detail="OpenAPI specification input for API definitions."><small>INPUT</small><b>OpenAPI<br>Specification</b></button><span class="flow-arrow">→</span>
-              <button class="flow-node accent" data-detail="Processes specifications and generates MCP-ready outputs."><small>GENERATE</small><b>MCP Blueprint<br>Generator</b></button><span class="flow-arrow">→</span>
-              <button class="flow-node" data-detail="A deployable server with generated tool definitions."><small>OUTPUT</small><b>Generated MCP<br>Server</b></button>
-              <span class="flow-arrow vertical">↓</span>
-              <div class="flow-row-bottom"><button class="flow-node" data-detail="Discovers tools exposed by the generated MCP server."><small>DISCOVER</small><b>Tool<br>Discovery</b></button><span class="flow-arrow">→</span><button class="flow-node" data-detail="Dynamically invokes tools through an LLM-powered orchestration layer."><small>ORCHESTRATE</small><b>LLM<br>Orchestration</b></button><span class="flow-arrow">→</span><button class="flow-node violet" data-detail="Enables natural-language interaction with enterprise APIs."><small>INTERACT</small><b>Enterprise<br>API</b></button></div>
+            <div class="flow-diagram flow-list" aria-label="MCP Blueprint Generator architecture steps">
+              <ol>
+                <li><small>INPUT</small><b>OpenAPI Specification</b></li>
+                <li><small>GENERATE</small><b>MCP Blueprint Generator</b></li>
+                <li><small>OUTPUT</small><b>Generated MCP Server</b></li>
+                <li><small>DISCOVER</small><b>Tool Discovery</b></li>
+                <li><small>ORCHESTRATE</small><b>LLM Orchestration</b></li>
+                <li><small>INTERACT</small><b>Enterprise API</b></li>
+              </ol>
             </div>
-            <div class="architecture-detail" id="architectureDetail">Select a system component to inspect it.</div>
+            <div class="architecture-detail" id="architectureDetail">OpenAPI specification → MCP server → AI orchestration → enterprise API</div>
           </div>
         </article>
         <article class="project-secondary reveal">
